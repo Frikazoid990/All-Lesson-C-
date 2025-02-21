@@ -183,7 +183,6 @@ namespace To_DoList
                     }
                 }
                 Thread.Sleep(1500);
-
             }
 
 
