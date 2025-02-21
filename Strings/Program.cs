@@ -11,6 +11,10 @@ namespace Strings
         static void Main(string[] args)
         {
             
+        }
+
+        static void ConsoleBasic()
+        {
             //Console.WriteLine("Tell me your name");
 
             //string name = Console.ReadLine();
@@ -33,11 +37,6 @@ namespace Strings
             Console.ForegroundColor = ConsoleColor.Green;
 
             Console.Write("Newstyle");
-
-
-
-
-
         }
 
         static void ComparingStrings() {
