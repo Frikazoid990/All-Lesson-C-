@@ -12,9 +12,15 @@ namespace EN_03_ControlFlow
 
         static void Main(string[] args)
         {
+
+
+        }
+
+        static void HomeWork1Factorial()
+        {
             Console.WriteLine("Введите кол-во чисел для вычисления");
             int count = int.Parse(Console.ReadLine());
-            if(count < 2 || count == 2)
+            if (count < 2 || count == 2)
             {
                 Console.WriteLine("Вы ввели кол-во меньше или равное двум(2) в таком случае числа фибоначи выглядят так:");
                 int[] tmp = new int[2];
@@ -30,19 +36,16 @@ namespace EN_03_ControlFlow
                 int[] fibonachi = new int[count];
                 fibonachi[0] = 0;
                 fibonachi[1] = 1;
-                for(int i = 2; i < fibonachi.Length; i++)
+                for (int i = 2; i < fibonachi.Length; i++)
                 {
                     fibonachi[i] = fibonachi[i - 1] + fibonachi[i - 2];
 
                 }
-                foreach(var i in fibonachi)
+                foreach (var i in fibonachi)
                 {
                     Console.Write(i + " ");
                 }
-
             }
-
-
         }
 
         static void WhileDoWhile()
