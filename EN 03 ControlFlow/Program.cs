@@ -9,6 +9,7 @@ namespace EN_03_ControlFlow
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("Введите кол-во чисел для вычисления");
