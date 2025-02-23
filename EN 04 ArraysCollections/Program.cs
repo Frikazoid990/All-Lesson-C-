@@ -57,7 +57,7 @@ namespace EN_04_ArraysCollections
             }
             else
             {
-                Console.WriteLine("Failed to add using ky 2");
+                Console.WriteLine("Failed to add using key 2");
             }
 
 
