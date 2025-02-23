@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27 Enum", "Enum\27 Enum.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YouTube Les", "YouTube Les", "{CD0AF8F6-C30D-4045-BD67-10B5E0FED989}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metanit Les begin with class", "Metanit Les begin with class", "{4313211D-57A4-40D9-8757-770CF3D71377}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metanit Les", "Metanit Les", "{4313211D-57A4-40D9-8757-770CF3D71377}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 01 Class", "1 Class\MT 01 Class.csproj", "{093B0ACD-6E18-4D91-81DD-8FB77667F2A6}"
 EndProject
