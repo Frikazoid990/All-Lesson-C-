@@ -49,7 +49,7 @@ namespace EN_04_ArraysCollections
 
             Console.WriteLine($"ContKey: {containsKey}, ContValue: {containsValue}");
 
-           
+            people.Remove(1);
 
             if(people.TryGetValue(2, out string val))
             {
