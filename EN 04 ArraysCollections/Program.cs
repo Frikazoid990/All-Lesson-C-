@@ -10,7 +10,57 @@ namespace EN_04_ArraysCollections
     {
         static void Main(string[] args)
         {
+            var people = new Dictionary<int, string>();
+            people.Add(1, "John");
+            people.Add(2, "Bob");
+            people.Add(3, "Alice");
 
+            people = new Dictionary<int, string>()
+            {
+                { 1, "John"},
+                { 2, "Bob"},
+                { 3, "Alice"},
+            };
+
+            string name = people[1];
+            Console.WriteLine(name);
+
+            var keys = people.Keys;
+            foreach (var item in keys)
+            {
+                Console.WriteLine(item);
+            }
+
+            var values = people.Values;
+            foreach (var item in values)
+            {
+                Console.WriteLine(item);
+            }
+
+            foreach (var item in people)
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+            }
+
+            Console.WriteLine(people.Count);
+
+            bool containsKey = people.ContainsKey(2);
+            bool containsValue = people.ContainsValue("John");
+
+            Console.WriteLine($"ContKey: {containsKey}, ContValue: {containsValue}");
+
+            people.Remove(1);
+
+            if(people.TryGetValue(2, out string val))
+            {
+                Console.WriteLine($"Key 2, Val={val}");
+            }
+            else
+            {
+                Console.WriteLine("Failed to get!");
+            }
+
+            people.Clear();
         }
 
         static void ListDemo()
