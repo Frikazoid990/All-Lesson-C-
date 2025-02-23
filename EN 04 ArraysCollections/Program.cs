@@ -10,6 +10,11 @@ namespace EN_04_ArraysCollections
     {
         static void Main(string[] args)
         {
+
+        }
+
+        static void Dictionary()
+        {
             var people = new Dictionary<int, string>();
             people.Add(1, "John");
             people.Add(2, "Bob");
