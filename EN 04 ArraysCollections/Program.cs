@@ -51,7 +51,17 @@ namespace EN_04_ArraysCollections
 
             people.Remove(1);
 
-            if(people.TryGetValue(2, out string val))
+            if (people.TryAdd(2, "Elias"))
+            {
+                Console.WriteLine("Added successfuly");
+            }
+            else
+            {
+                Console.WriteLine("Failed to add using ky 2");
+            }
+
+
+            if (people.TryGetValue(2, out string val))
             {
                 Console.WriteLine($"Key 2, Val={val}");
             }
