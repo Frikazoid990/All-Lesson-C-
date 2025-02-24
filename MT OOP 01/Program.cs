@@ -13,7 +13,7 @@ namespace MT_OOP_01
 
             Employee employee1 = new Employee("Bob", "Microsoft");
 
-            //employee1.Print();
+            employee1.Print();
 
             Person person1 = employee1;
 

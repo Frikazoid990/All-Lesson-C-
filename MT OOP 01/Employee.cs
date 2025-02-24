@@ -8,7 +8,7 @@ namespace MT_OOP_01
 {
     public class Employee : Person
     {
-        public string company {  get; set; }
+        public string company { get; set; } = "Unknow";
         public Employee(string name, string company) : base(name)
         {
             this.company = company;
