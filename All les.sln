@@ -97,11 +97,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 13 Null and value types"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 14 Null check", "MT 14 Null check\MT 14 Null check.csproj", "{81102751-EB6C-44DD-BD0E-31110E02A56A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 15 Type aliases and static Imports", "MT 15 Type aliases and static Imports\MT 15 Type aliases and static Imports.csproj", "{B33B055E-8134-43C0-82CE-357F2D1F4D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MT 15 Type aliases and static Imports", "MT 15 Type aliases and static Imports\MT 15 Type aliases and static Imports.csproj", "{B33B055E-8134-43C0-82CE-357F2D1F4D3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pet Projects", "Pet Projects", "{4E857589-9D52-4411-9772-0A1B6DCEA76A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "To-DoList", "To-DoList\To-DoList.csproj", "{DECA375D-DA4B-4E59-A97A-102F5AC148EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "To-DoList", "To-DoList\To-DoList.csproj", "{DECA375D-DA4B-4E59-A97A-102F5AC148EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engineer Spock Les", "Engineer Spock Les", "{B1B7239F-3E18-4435-959A-9B11DDEB0E8E}"
 EndProject
@@ -111,7 +111,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 02 Types", "EN 02 Types\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 03 ControlFlow", "EN 03 ControlFlow\EN 03 ControlFlow.csproj", "{C12F799F-A199-4571-8B26-1227C4DF1B42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 04 ArraysCollections", "EN 04 ArraysCollections\EN 04 ArraysCollections.csproj", "{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EN 04 ArraysCollections", "EN 04 ArraysCollections\EN 04 ArraysCollections.csproj", "{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT OOP", "MT OOP", "{F083780F-836F-4457-B0E9-EEC7A8B078AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 01", "MT OOP 01\MT OOP 01.csproj", "{215E7322-A901-4958-AF6F-F9542278FDFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -319,6 +323,10 @@ Global
 		{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215E7322-A901-4958-AF6F-F9542278FDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215E7322-A901-4958-AF6F-F9542278FDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215E7322-A901-4958-AF6F-F9542278FDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215E7322-A901-4958-AF6F-F9542278FDFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -374,6 +382,8 @@ Global
 		{AB72E1F5-BCE7-4FCB-985B-7D6C36156063} = {B1B7239F-3E18-4435-959A-9B11DDEB0E8E}
 		{C12F799F-A199-4571-8B26-1227C4DF1B42} = {B1B7239F-3E18-4435-959A-9B11DDEB0E8E}
 		{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97} = {B1B7239F-3E18-4435-959A-9B11DDEB0E8E}
+		{F083780F-836F-4457-B0E9-EEC7A8B078AB} = {4313211D-57A4-40D9-8757-770CF3D71377}
+		{215E7322-A901-4958-AF6F-F9542278FDFF} = {F083780F-836F-4457-B0E9-EEC7A8B078AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
