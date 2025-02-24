@@ -10,6 +10,7 @@ namespace MT_OOP_01
     {
         static void Main(string[] args)
         {
+
             Employee employee1 = new Employee("Bob", "Microsoft");
 
             //employee1.Print();
