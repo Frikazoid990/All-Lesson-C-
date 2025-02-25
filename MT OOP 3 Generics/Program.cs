@@ -21,10 +21,12 @@ namespace MT_OOP_3_Generics
 
             /*
              * Исправляется это классом PersonGeneric (зайди в класс чтобы увидеть реализацию generic)
-             *
+             * Вот так ->
             */
 
-            PersonGeneric<int, string> PersonGenBob = new PersonGeneric<int, string>(546, "Bob");
+            PersonGeneric<int, string> PersonGenBobi = new PersonGeneric<int, string>(546, "Bobi");
+            Console.WriteLine(PersonGenBobi.Id + " " + PersonGenBobi.Name);
+
             /*
              * 
             */
