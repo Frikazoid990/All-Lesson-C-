@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace MT_OOP_3_Generics
 {
-    public class PersonWithGenerics
+    public class PersonInt
     {
-        public object Id { get; }
-    
+        public int Id { get; }
         public string Name { get; }
     
-        public PersonWithGenerics(object id, string name)
+        public PersonInt(int id, string name)
         {
             Id = id;
             Name = name;
         }
 
-
     }
-
 }

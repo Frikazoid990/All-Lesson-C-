@@ -10,21 +10,30 @@ namespace MT_OOP_3_Generics
     {
         static void Main(string[] args)
         {
-            PersonWithGenerics personBobWithGenerics = new PersonWithGenerics("abc123", "Bob");
+            PersonObj PersonObjBob = new PersonObj("abc123", "Bob");
 
-            PersonWithGenerics personTomWithGenerics = new PersonWithGenerics(123, "Tom");
+            PersonObj PersonObjTom = new PersonObj(123, "Tom");
 
             /* Явление описанное выше является boxing и unboxing в данном случае при передачи ID в двух этих случаях система оборачивает все эти значения в System.Object
              * И сохраняет его в куче(hipe)
              * Распаковка же ведет к обратному из object в value type, что влияет на производительность
             */
 
+            /*
+             * Исправляется это классом PersonGeneric (зайди в класс чтобы увидеть реализацию generic)
+             *
+            */
 
-            PersonWithoutGenerics personBobWithoutGenerics = new PersonWithoutGenerics(1, "Bob");
+            PersonGeneric<int, string> PersonGenBob = new PersonGeneric<int, string>(546, "Bob");
+            /*
+             * 
+            */
+
+            PersonInt personBobWithoutGenerics = new PersonInt(1, "Bob");
 
             int intBobId = personBobWithoutGenerics.Id;
-            int intTomId = (int)personTomWithGenerics.Id;
-            string strBobId = (string)personBobWithGenerics.Id;
+            int intTomId = (int)PersonObjTom.Id;
+            string strBobId = (string)PersonObjBob.Id;
 
             Console.WriteLine($"Generic: {strBobId}, Without Generic: {intBobId}, Tom ID: {intTomId}");
 

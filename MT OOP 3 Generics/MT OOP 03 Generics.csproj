@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PersonWithGenerics.cs" />
-    <Compile Include="PersonWithoutGenerics.cs" />
+    <Compile Include="PersonGeneric.cs" />
+    <Compile Include="PersonInt.cs" />
+    <Compile Include="PersonObj.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
