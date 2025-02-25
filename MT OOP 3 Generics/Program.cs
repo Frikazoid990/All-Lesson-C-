@@ -17,8 +17,7 @@ namespace MT_OOP_3_Generics
             /* Явление описанное выше является boxing и unboxing в данном случае при передачи ID в двух этих случаях система оборачивает все эти значения в System.Object
              * И сохраняет его в куче(hipe)
              * Распаковка же ведет к обратному из object в value type, что влияет на производительность
-             * 
-             */
+            */
 
 
             PersonWithoutGenerics personBobWithoutGenerics = new PersonWithoutGenerics(1, "Bob");
