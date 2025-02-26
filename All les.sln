@@ -135,6 +135,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 02 Block catch and excep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 03 Exception types_Class Exception", "MT 03 Exception types_Class Exception\MT 03 Exception types_Class Exception.csproj", "{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 04 Generate Exception and operator_throw", "MT 04 Generate Exception and operator_throw\MT 04 Generate Exception and operator_throw.csproj", "{D8055BFC-E2FC-465D-9084-38CD007AC964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 05 Create Excaptions classes", "MT 05 Create Excaptions classes\MT 05 Create Excaptions classes.csproj", "{E7AE00D4-A800-43B4-A014-8A05B6A503DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -373,6 +377,14 @@ Global
 		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8055BFC-E2FC-465D-9084-38CD007AC964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8055BFC-E2FC-465D-9084-38CD007AC964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8055BFC-E2FC-465D-9084-38CD007AC964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8055BFC-E2FC-465D-9084-38CD007AC964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -439,6 +451,8 @@ Global
 		{078CCCEE-289A-46E8-8456-F20AB3E93112} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{3271B87E-85C6-4F65-905A-2E25F80BB645} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{D8055BFC-E2FC-465D-9084-38CD007AC964} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{E7AE00D4-A800-43B4-A014-8A05B6A503DE} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}

@@ -37,6 +37,45 @@ namespace MT_03_Exception_types_Class_Exception
 
                 NullReferenceException: генерируется при попытке обращения к объекту, который равен null (то есть по сути неопределен) 
             */
+
+            try
+            {
+                int[] numbers = new int[4];
+                numbers[7] = 9;     // IndexOutOfRangeException
+
+                int x = 5;
+                int y = x / 0;  // DivideByZeroException
+                Console.WriteLine($"Результат: {y}");
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Возникло исключение DivideByZeroException");
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            Console.Read();
+
+            try
+            {
+                object obj = "you";
+                int num = (int)obj;     // System.InvalidCastException
+                Console.WriteLine($"Результат: {num}");
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Возникло исключение DivideByZeroException");
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("Возникло исключение IndexOutOfRangeException");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Исключение: {ex.Message}");
+            }
         }
     }
 }
