@@ -19,9 +19,15 @@ namespace Ch6_MT_01._01_Using_delegates
             this.sum = sum;
         }
 
+        // Регистрируем делегат
         public void RegisterHandler(AccountHandler del)
         {
-            taken = del;
+            taken += del;
+        }
+        // Отмена регистрации делегата
+        public void UnregisterHandler(AccountHandler del)
+        {
+            taken -= del; // удаляем делегат
         }
 
         public void Add(int sum)
