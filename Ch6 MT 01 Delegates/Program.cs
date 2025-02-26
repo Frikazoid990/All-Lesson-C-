@@ -23,7 +23,6 @@ namespace Ch6_MT_01_Delegates
         {
             public void Display() => Console.WriteLine("Привет");
 
-            //s
         }
 
         static void HelloM() => Console.WriteLine("Hello METANIT.COM");
