@@ -22,11 +22,14 @@ namespace Ch6_MT_01_Delegates
         class Hello
         {
             public void Display() => Console.WriteLine("Привет");
+
+            //s
         }
 
         static void HelloM() => Console.WriteLine("Hello METANIT.COM");
         static void Main(string[] args)
         {
+            
             Message mes1 = Welcome.Print;
             mes1();
 
