@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -38,7 +39,7 @@ namespace Ch6_MT_01._01_Using_delegates
             else if(this.sum >= sum && sum > 0)
             {
                 this.sum -= sum;
-                taken?.Invoke($"Со счета списано {sum} у.е.");
+                taken?.Invoke($"Со счета списано {sum}");
             }
             else
             {
