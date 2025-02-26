@@ -10,19 +10,35 @@ namespace Ch6_MT_01_Delegates
     class Program
     {
 
-        delegate void Message(string m);
+         public delegate void Message();
 
-        static void Hello(string message) => Console.WriteLine($"{message}");
+        delegate int Operation(int x, int y);
 
+
+        public class Welcome
+        {
+            public static void Print() => Console.WriteLine("Welcome");
+        }
+        class Hello
+        {
+            public void Display() => Console.WriteLine("Привет");
+        }
+
+        static void HelloM() => Console.WriteLine("Hello METANIT.COM");
         static void Main(string[] args)
         {
-            Message mes;
-            mes = Hello;
+            Message mes1 = Welcome.Print;
+            mes1();
 
-            mes("22");
+            mes1 = HelloM;
+            mes1();
+
+            mes1 = new Hello().Display;
+            mes1();
             
         }
 
 
     }
+
 }
