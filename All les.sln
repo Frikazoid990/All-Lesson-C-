@@ -127,6 +127,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 03.02 Generic", "MT 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT Classes Structs and Namesapces", "MT Classes Structs and Namesapces", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT Exception-handling statements", "MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 01 try_catch_finally", "MT 01 try_catch_finally\MT 01 try_catch_finally.csproj", "{078CCCEE-289A-46E8-8456-F20AB3E93112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 02 Block catch and exceptions filters", "MT 02 Block catch and exceptions filters\MT 02 Block catch and exceptions filters.csproj", "{3271B87E-85C6-4F65-905A-2E25F80BB645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 03 Exception types_Class Exception", "MT 03 Exception types_Class Exception\MT 03 Exception types_Class Exception.csproj", "{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -353,6 +361,18 @@ Global
 		{E208CB15-30DC-4A28-ACF4-926CCDF9C94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E208CB15-30DC-4A28-ACF4-926CCDF9C94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E208CB15-30DC-4A28-ACF4-926CCDF9C94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078CCCEE-289A-46E8-8456-F20AB3E93112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078CCCEE-289A-46E8-8456-F20AB3E93112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078CCCEE-289A-46E8-8456-F20AB3E93112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078CCCEE-289A-46E8-8456-F20AB3E93112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3271B87E-85C6-4F65-905A-2E25F80BB645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3271B87E-85C6-4F65-905A-2E25F80BB645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3271B87E-85C6-4F65-905A-2E25F80BB645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3271B87E-85C6-4F65-905A-2E25F80BB645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -415,6 +435,10 @@ Global
 		{4192280A-FAA4-4F22-8684-DB52A3171B37} = {F083780F-836F-4457-B0E9-EEC7A8B078AB}
 		{E208CB15-30DC-4A28-ACF4-926CCDF9C94D} = {F083780F-836F-4457-B0E9-EEC7A8B078AB}
 		{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8} = {4313211D-57A4-40D9-8757-770CF3D71377}
+		{B01AE08D-A673-405E-AF4B-F22809EC07F7} = {4313211D-57A4-40D9-8757-770CF3D71377}
+		{078CCCEE-289A-46E8-8456-F20AB3E93112} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{3271B87E-85C6-4F65-905A-2E25F80BB645} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
