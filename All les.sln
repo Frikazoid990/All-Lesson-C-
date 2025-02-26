@@ -143,6 +143,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 06 Find block catch when
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 MT Delegates, Events, and Lambdas", "04 MT Delegates, Events, and Lambdas", "{2B3D4568-A830-4D72-AA76-318989A2E2B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 01 Delegates", "Ch6 MT 01 Delegates\Ch6 MT 01 Delegates.csproj", "{D2A96957-BF25-4990-A074-18C9CD8568C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -393,6 +395,10 @@ Global
 		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A96957-BF25-4990-A074-18C9CD8568C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A96957-BF25-4990-A074-18C9CD8568C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A96957-BF25-4990-A074-18C9CD8568C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A96957-BF25-4990-A074-18C9CD8568C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -463,6 +469,7 @@ Global
 		{E7AE00D4-A800-43B4-A014-8A05B6A503DE} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{2B3D4568-A830-4D72-AA76-318989A2E2B4} = {4313211D-57A4-40D9-8757-770CF3D71377}
+		{D2A96957-BF25-4990-A074-18C9CD8568C7} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
