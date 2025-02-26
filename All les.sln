@@ -111,7 +111,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 02 Types", "EN 02 Types\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 03 ControlFlow", "EN 03 ControlFlow\EN 03 ControlFlow.csproj", "{C12F799F-A199-4571-8B26-1227C4DF1B42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT OOP", "MT OOP", "{F083780F-836F-4457-B0E9-EEC7A8B078AB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 MT OOP", "02 MT OOP", "{F083780F-836F-4457-B0E9-EEC7A8B078AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 01", "MT OOP 01\MT OOP 01.csproj", "{215E7322-A901-4958-AF6F-F9542278FDFF}"
 EndProject
@@ -125,9 +125,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 03.01 Generic", "MT 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 03.02 Generic", "MT OOP 03.02 Generic\MT OOP 03.02 Generic.csproj", "{E208CB15-30DC-4A28-ACF4-926CCDF9C94D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT Classes Structs and Namesapces", "MT Classes Structs and Namesapces", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 MT Classes Structs and Namesapces", "01 MT Classes Structs and Namesapces", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MT Exception-handling statements", "MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 MT Exception-handling statements", "03 MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 01 try_catch_finally", "MT 01 try_catch_finally\MT 01 try_catch_finally.csproj", "{078CCCEE-289A-46E8-8456-F20AB3E93112}"
 EndProject
@@ -138,6 +138,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 04 Generate Exception and operator_throw", "MT 04 Generate Exception and operator_throw\MT 04 Generate Exception and operator_throw.csproj", "{D8055BFC-E2FC-465D-9084-38CD007AC964}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 05 Create Excaptions classes", "MT 05 Create Excaptions classes\MT 05 Create Excaptions classes.csproj", "{E7AE00D4-A800-43B4-A014-8A05B6A503DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 06 Find block catch when handling exception", "MT 06 Find block catch when handling exception\MT 06 Find block catch when handling exception.csproj", "{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 MT Delegates, Events, and Lambdas", "04 MT Delegates, Events, and Lambdas", "{2B3D4568-A830-4D72-AA76-318989A2E2B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -385,6 +389,10 @@ Global
 		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7AE00D4-A800-43B4-A014-8A05B6A503DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -453,6 +461,8 @@ Global
 		{1AAA1619-7FF4-44D1-835C-5E207F5BB61F} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{D8055BFC-E2FC-465D-9084-38CD007AC964} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
 		{E7AE00D4-A800-43B4-A014-8A05B6A503DE} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72} = {B01AE08D-A673-405E-AF4B-F22809EC07F7}
+		{2B3D4568-A830-4D72-AA76-318989A2E2B4} = {4313211D-57A4-40D9-8757-770CF3D71377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
