@@ -147,6 +147,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 01.00 Delegates", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 01.01 Using delegates", "Ch6 MT 01.01 Using delegates\Ch6 MT 01.01 Using delegates.csproj", "{5300162F-8403-444E-8DE7-4F39C82B673F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 02 Anonim methods", "Ch6 MT 02 Anonim methods\Ch6 MT 02 Anonim methods.csproj", "{D2D0043A-8951-486E-8C20-28A5A1A442FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{5300162F-8403-444E-8DE7-4F39C82B673F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5300162F-8403-444E-8DE7-4F39C82B673F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5300162F-8403-444E-8DE7-4F39C82B673F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D0043A-8951-486E-8C20-28A5A1A442FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D0043A-8951-486E-8C20-28A5A1A442FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D0043A-8951-486E-8C20-28A5A1A442FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D0043A-8951-486E-8C20-28A5A1A442FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -477,6 +483,7 @@ Global
 		{2B3D4568-A830-4D72-AA76-318989A2E2B4} = {4313211D-57A4-40D9-8757-770CF3D71377}
 		{D2A96957-BF25-4990-A074-18C9CD8568C7} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{5300162F-8403-444E-8DE7-4F39C82B673F} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
+		{D2D0043A-8951-486E-8C20-28A5A1A442FA} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
