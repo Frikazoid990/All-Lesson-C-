@@ -1,17 +1,12 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ch6_MT_01._01_Using_delegates
 {
     public delegate void AccountHandler(string message);
     public class Account
     {
-        
+        private string User;
         AccountHandler? taken;
         private int sum;
         public Account(int sum)
@@ -37,12 +32,12 @@ namespace Ch6_MT_01._01_Using_delegates
 
         public void Take(int sum)
         {
-            if(sum < 0)
+            if (sum < 0)
             {
                 throw new ArgumentException("Сумма не может быть отрицательной!");
-                
+
             }
-            else if(this.sum >= sum && sum > 0)
+            else if (this.sum >= sum && sum > 0)
             {
                 this.sum -= sum;
                 taken?.Invoke($"Со счета списано {sum}");
