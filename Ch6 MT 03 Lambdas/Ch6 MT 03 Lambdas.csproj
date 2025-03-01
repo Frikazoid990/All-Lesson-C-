@@ -4,6 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	  <LangVersion>12.0</LangVersion>  
     <ProjectGuid>{DA77F804-5BD7-4611-BB49-90C07BC5AD39}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Ch6_MT_03_Lambdas</RootNamespace>
