@@ -15,14 +15,28 @@ namespace Ch6_MT_03_Lambdas
         delegate void Operation(int n1, int n2);
         delegate void PrintHandler(string message);
         delegate int Operation1(int x, int y);
+
+        static int Sum(int[] numbers, IsEqual func)
+        {
+            int result = 0;
+            foreach (int i in numbers)
+            {
+                if (func(i))
+                    result += i;
+            }
+            return result;
+        }
+
+        delegate bool IsEqual(int x);
+
         static void Main(string[] args)
         {
             //Лямбды
-
             Message hello = () => Console.WriteLine("hello");
             hello();
             hello();
             hello();
+            Console.WriteLine("--------------");
             //----------------------------------------
             //Параметры лямбды
             Operation sum = (x,y) => Console.WriteLine($"{x} + {y} = {x + y}");
@@ -36,6 +50,7 @@ namespace Ch6_MT_03_Lambdas
             var welcome = (string message = "hello") => Console.WriteLine(message); //C# version 12.0
             welcome("hello world"); // hello world
             welcome();              // hello
+            Console.WriteLine("--------------");
             //----------------------------------------
             //Возвращение результата
             var sum1 = (int x, int y) => x + y;
@@ -56,6 +71,7 @@ namespace Ch6_MT_03_Lambdas
 
             int result2 = subtract(-10, 6);  // 16
             Console.WriteLine(result2);      // 16
+            Console.WriteLine("--------------");
 
             //Добавление и удаление действий в лямбда-выражении
             var hello1 = () => Console.WriteLine("METANIT.COM");
@@ -74,6 +90,18 @@ namespace Ch6_MT_03_Lambdas
             message?.Invoke();  // на случай, если в message больше нет действий
 
             void Print() => Console.WriteLine("Welcome to C#");
+
+            //----------------------------------------
+            Console.WriteLine("--------------");
+            int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            // найдем сумму чисел больше 5
+            int result3 = Sum(integers, x => x > 5);
+            Console.WriteLine(result3); // 30
+
+            // найдем сумму четных чисел
+            int result4 = Sum(integers, x => x % 2 == 0);
+            Console.WriteLine(result4);  //20
         }
     }
 }
