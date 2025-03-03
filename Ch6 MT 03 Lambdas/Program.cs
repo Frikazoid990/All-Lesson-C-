@@ -102,6 +102,9 @@ namespace Ch6_MT_03_Lambdas
             // найдем сумму четных чисел
             int result4 = Sum(integers, x => x % 2 == 0);
             Console.WriteLine(result4);  //20
+            Console.WriteLine("--------------");
+            //----------------------------------------
+            //Лямбда-выражение как результат метода
         }
     }
 }
