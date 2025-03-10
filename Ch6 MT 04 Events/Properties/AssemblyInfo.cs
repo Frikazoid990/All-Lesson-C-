@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Ch6 MT04 Events")]
+[assembly: AssemblyTitle("Ch6 MT 04 Events")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ch6 MT04 Events")]
+[assembly: AssemblyProduct("Ch6 MT 04 Events")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("855686f1-6b82-47fb-aca0-8551cdeea12d")]
+[assembly: Guid("7a2ac537-dfd4-4d82-836f-760f0e91fb55")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

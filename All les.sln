@@ -125,7 +125,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 MT Classes Structs and N
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 MT Exception-handling statements", "03 MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 01 try_catch_finally", "MT 01 try_catch_finally\MT 01 try_catch_finally.csproj", "{078CCCEE-289A-46E8-8456-F20AB3E93112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MT 01 try_catch_finally", "MT 01 try_catch_finally\MT 01 try_catch_finally.csproj", "{078CCCEE-289A-46E8-8456-F20AB3E93112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 02 Block catch and exceptions filters", "MT 02 Block catch and exceptions filters\MT 02 Block catch and exceptions filters.csproj", "{3271B87E-85C6-4F65-905A-2E25F80BB645}"
 EndProject
@@ -157,11 +157,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interface", "05 Interfac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defining interfaces", "Defining interfaces\Defining interfaces.csproj", "{0B42E547-F404-47F5-9A97-D93E956DB5BF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 Asynchronous programming", "14 Asynchronous programming", "{F2344CD8-3DE9-4038-89EC-B3CE86827B8F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchrone methods, async and await", "Asynchrone methods, async and await\Asynchrone methods, async and await.csproj", "{0C0F1EC5-B20A-474B-8008-15D66066A164}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 04 Events", "Ch6 MT 04 Events\Ch6 MT 04 Events.csproj", "{855686F1-6B82-47FB-ACA0-8551CDEEA12D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 04 Events", "Ch6 MT 04 Events\Ch6 MT 04 Events.csproj", "{7A2AC537-DFD4-4D82-836F-760F0E91FB55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -437,14 +433,10 @@ Global
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Release|Any CPU.Build.0 = Release|Any CPU
-		{855686F1-6B82-47FB-ACA0-8551CDEEA12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{855686F1-6B82-47FB-ACA0-8551CDEEA12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{855686F1-6B82-47FB-ACA0-8551CDEEA12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{855686F1-6B82-47FB-ACA0-8551CDEEA12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2AC537-DFD4-4D82-836F-760F0E91FB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2AC537-DFD4-4D82-836F-760F0E91FB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2AC537-DFD4-4D82-836F-760F0E91FB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2AC537-DFD4-4D82-836F-760F0E91FB55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -522,9 +514,7 @@ Global
 		{DA77F804-5BD7-4611-BB49-90C07BC5AD39} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{B63287E7-CA69-493E-99AC-3FFA0AA4390E} = {4313211D-57A4-40D9-8757-770CF3D71377}
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
-		{F2344CD8-3DE9-4038-89EC-B3CE86827B8F} = {4313211D-57A4-40D9-8757-770CF3D71377}
-		{0C0F1EC5-B20A-474B-8008-15D66066A164} = {F2344CD8-3DE9-4038-89EC-B3CE86827B8F}
-		{855686F1-6B82-47FB-ACA0-8551CDEEA12D} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
+		{7A2AC537-DFD4-4D82-836F-760F0E91FB55} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
