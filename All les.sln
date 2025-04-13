@@ -157,6 +157,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interface", "05 Interfac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defining interfaces", "Defining interfaces\Defining interfaces.csproj", "{0B42E547-F404-47F5-9A97-D93E956DB5BF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 Asynchronous programming", "14 Asynchronous programming", "{F2344CD8-3DE9-4038-89EC-B3CE86827B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchrone methods, async and await", "Asynchrone methods, async and await\Asynchrone methods, async and await.csproj", "{0C0F1EC5-B20A-474B-8008-15D66066A164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -431,6 +435,10 @@ Global
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0F1EC5-B20A-474B-8008-15D66066A164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -508,6 +516,8 @@ Global
 		{DA77F804-5BD7-4611-BB49-90C07BC5AD39} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{B63287E7-CA69-493E-99AC-3FFA0AA4390E} = {4313211D-57A4-40D9-8757-770CF3D71377}
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
+		{F2344CD8-3DE9-4038-89EC-B3CE86827B8F} = {4313211D-57A4-40D9-8757-770CF3D71377}
+		{0C0F1EC5-B20A-474B-8008-15D66066A164} = {F2344CD8-3DE9-4038-89EC-B3CE86827B8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
