@@ -27,10 +27,6 @@ namespace Ch6_MT_01._01_Using_delegates
 
         }
 
-
-
-
-
         static void PrintSimpleMessage(string message) => Console.WriteLine(message);
         static void PrintColorMessage(string message)
         {
