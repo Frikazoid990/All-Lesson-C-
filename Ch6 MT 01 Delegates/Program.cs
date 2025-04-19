@@ -73,7 +73,7 @@ namespace Ch6_MT_01_Delegates
             /////++++++++++++++++++++++++++++++++++++++++++++++++++++++
             Message message = HelloM;
             message += HowAreYou;
-            message += HowAreYou;
+            message += HowAreYou;  
             message += HelloM;
             message += HowAreYou;
             message();
@@ -81,7 +81,7 @@ namespace Ch6_MT_01_Delegates
             message -= HowAreYou;
             message();
             Console.WriteLine();
-            message -= HowAreYou;
+            message -= HowAreYou;                               
             message();
             Console.WriteLine();
             /////++++++++++++++++++++++++++++++++++++++++++++++++++++++
