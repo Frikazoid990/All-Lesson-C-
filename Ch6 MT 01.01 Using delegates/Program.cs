@@ -23,8 +23,6 @@ namespace Ch6_MT_01._01_Using_delegates
             account.Add(300);
             account.Take(500);
 
-
-
         }
 
         static void PrintSimpleMessage(string message) => Console.WriteLine(message);

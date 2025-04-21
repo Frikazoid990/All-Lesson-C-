@@ -8,48 +8,62 @@ namespace Ch6_MT_02_Anonim_methods
 {
     class Program
     {
+        //delegate void MessageHandler(string message);
+
+        //delegate int Operation(int x, int y);
+
+        //static void ShowMessage(string message, MessageHandler handler)
+        //{
+        //    handler(message);
+        //}
+
         delegate void MessageHandler(string message);
-
-        delegate int Operation(int x, int y);
-
-        static void ShowMessage(string message, MessageHandler handler)
-        {
-            handler(message);
-        }
 
         static void Main(string[] args)
         {
-            MessageHandler handler = delegate (string mes)
+            MessageHandler handler = (string message) =>
             {
-                Console.WriteLine(mes);
+                message += " Skripkin Daniil";
+                Console.WriteLine(message);
             };
 
-            handler("What`s up?");
+            handler("Messangers");
 
 
-            ShowMessage("Hello!...", handler);
 
-            ShowMessage("hello!", delegate (string mes)
-            {
-                Console.WriteLine(mes);
-            });
 
-            Operation operation = delegate (int x, int y)
-            {
-                return x + y;
-            };
 
-            int z = operation(2, 1);
+            //MessageHandler handler = delegate (string mes)
+            //{
+            //    Console.WriteLine(mes);
+            //};
 
-            Console.WriteLine(z);
+            //handler("What`s up?");
 
-            Operation operation1 = delegate (int x, int y)
-            {
-                return x + y + z;
-            };
 
-            int result = operation1(2, 1);
-            Console.WriteLine(result);
+            //ShowMessage("Hello!...", handler);
+
+            //ShowMessage("hello!", delegate (string mes)
+            //{
+            //    Console.WriteLine(mes);
+            //});
+
+            //Operation operation = delegate (int x, int y)
+            //{
+            //    return x + y;
+            //};
+
+            //int z = operation(2, 1);
+
+            //Console.WriteLine(z);
+
+            //Operation operation1 = delegate (int x, int y)
+            //{
+            //    return x + y + z;
+            //};
+
+            //int result = operation1(2, 1);
+            //Console.WriteLine(result);
 
         }
     }
