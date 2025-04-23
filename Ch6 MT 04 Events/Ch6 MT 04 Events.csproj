@@ -5,7 +5,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{855686F1-6B82-47FB-ACA0-8551CDEEA12D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+	  <LangVersion>12.0</LangVersion>
+	<OutputType>Exe</OutputType>
     <RootNamespace>Events</RootNamespace>
     <AssemblyName>Ch6 MT04 Events</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -58,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
