@@ -10,13 +10,18 @@ namespace Ch6_MT_04_Events
     {
         static void Main(string[] args)
         {
-            Account account = new Account(100);
-            account.Put(20);
-            Console.WriteLine($"Сумма на счете: {account.Sum}");
-            account.Take(70);   // пытаемся снять со счета 70
-            Console.WriteLine($"Сумма на счете: {account.Sum}");
-            account.Take(180);  // пытаемся снять со счета 180
-            Console.WriteLine($"Сумма на счете: {account.Sum}");
+            Account acc = new Account(100);
+            acc.Notify += DisplayMessage;
+            acc.Put(20);
+            acc.Take(70);
+            acc.Take(150);
+        }
+
+        static void DisplayMessage(Account sender, AccountEventArgs e)
+        {
+            Console.WriteLine($"Сумма транзакции: {e.Sum}");
+            Console.WriteLine(e.Message);
+            Console.WriteLine($"Текущая сумма на счете: {sender.Sum}");
         }
     }
 }
