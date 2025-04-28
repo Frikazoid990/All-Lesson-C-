@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B42E547-F404-47F5-9A97-D93E956DB5BF}</ProjectGuid>
+    <ProjectGuid>{16C47443-52F1-4CF5-84A0-95EC8E0E16B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Defining_interfaces</RootNamespace>
-    <AssemblyName>Defining interfaces</AssemblyName>
+    <RootNamespace>Ch6_MT_07_Closures</RootNamespace>
+    <AssemblyName>Ch6_MT_07_Closures</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
