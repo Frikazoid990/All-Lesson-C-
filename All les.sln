@@ -155,7 +155,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 03 Lambdas", "Ch6 MT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interface", "05 Interface", "{B63287E7-CA69-493E-99AC-3FFA0AA4390E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defining interfaces", "Defining interfaces\Defining interfaces.csproj", "{0B42E547-F404-47F5-9A97-D93E956DB5BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 01 Defining interfaces", "Defining interfaces\Ch7 MT 01 Defining interfaces.csproj", "{0B42E547-F404-47F5-9A97-D93E956DB5BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 04 Events", "Ch6 MT 04 Events\Ch6 MT 04 Events.csproj", "{7A2AC537-DFD4-4D82-836F-760F0E91FB55}"
 EndProject
@@ -164,6 +164,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 06 Delegates Action Func and Predicate", "Ch6 MT 06 Delegates Action Func and Predicate\Ch6 MT 06 Delegates Action Func and Predicate.csproj", "{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 07 Closures", "Ch6 MT 07 Closures\Ch6 MT 07 Closures.csproj", "{16C47443-52F1-4CF5-84A0-95EC8E0E16B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 02 Using Interfaces", "Ch7 MT 02 Using Interfaces\Ch7 MT 02 Using Interfaces.csproj", "{22B45A1F-FA8F-4671-9635-3A988414E2AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -455,6 +457,10 @@ Global
 		{16C47443-52F1-4CF5-84A0-95EC8E0E16B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C47443-52F1-4CF5-84A0-95EC8E0E16B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C47443-52F1-4CF5-84A0-95EC8E0E16B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B45A1F-FA8F-4671-9635-3A988414E2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B45A1F-FA8F-4671-9635-3A988414E2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B45A1F-FA8F-4671-9635-3A988414E2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B45A1F-FA8F-4671-9635-3A988414E2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -536,6 +542,7 @@ Global
 		{27EDF7E4-A651-4052-8D8A-6A445659B1A7} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{16C47443-52F1-4CF5-84A0-95EC8E0E16B9} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
+		{22B45A1F-FA8F-4671-9635-3A988414E2AA} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}

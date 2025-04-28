@@ -10,6 +10,9 @@ namespace Defining_interfaces
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(IMovable.maxSpeed);
+            Console.WriteLine(IMovable.minSpeed);
+            
         }
     }
 }
