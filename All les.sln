@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 04 Events", "Ch6 MT 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 05 Covariance and contravariance of delegates", "Ch6 MT 05 Covariance and contravariance of delegates\Ch6 MT 05 Covariance and contravariance of delegates.csproj", "{27EDF7E4-A651-4052-8D8A-6A445659B1A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 06 Delegates Action Func and Predicate", "Ch6 MT 06 Delegates Action Func and Predicate\Ch6 MT 06 Delegates Action Func and Predicate.csproj", "{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -443,6 +445,10 @@ Global
 		{27EDF7E4-A651-4052-8D8A-6A445659B1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27EDF7E4-A651-4052-8D8A-6A445659B1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27EDF7E4-A651-4052-8D8A-6A445659B1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -522,6 +528,7 @@ Global
 		{0B42E547-F404-47F5-9A97-D93E956DB5BF} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 		{7A2AC537-DFD4-4D82-836F-760F0E91FB55} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{27EDF7E4-A651-4052-8D8A-6A445659B1A7} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
+		{0D7E3F31-1581-4D6C-9C0A-8B7DD2A9283C} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
