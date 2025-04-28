@@ -43,6 +43,10 @@ namespace Ch6_MT_06_Delegates_Action_Func_and_Predicate
             Console.WriteLine(result2);
 
 
+            Func<int, int, string> createString = (a, b) => $"{a}{b}";
+            Console.WriteLine(createString(1,5)); 
+
+
 
         }
     }
