@@ -22,15 +22,29 @@ namespace Explicit_implementation_of_interfaces
             IAction baseAction2 = new BaseAction();
             baseAction2.Move();
 
-            Person person = new Person();
+            Person1 person = new Person1();
             ((ISchool)person).Study();
             ((IUniversity)person).Study();
 
-            
+            HeroAction action1 = new HeroAction();
+            action1.Move(); // Move in BaseAction
+
+            ((IAction)action1).Move(); // Move in HeroAction
+
+            IAction action2 = new HeroAction();
+
+            action2.Move(); // Move in HeroAction
+
+            IMovable tom = new Person("Tom");
+            //Подписываемся на событие 
+            tom.MoveEvent += () => Console.WriteLine($"{tom.Name} is moving");
+            tom.Move();
+
+           
 
         }
 
-        class Person : IUniversity, ISchool
+        class Person1 : IUniversity, ISchool
         {
             void IUniversity.Study() => Console.WriteLine("Учеба в университете");
             void ISchool.Study() => Console.WriteLine("Учеба в школе");
@@ -54,7 +68,12 @@ namespace Explicit_implementation_of_interfaces
 
         class BaseAction : IAction
         {
-            void IAction.Move() => Console.WriteLine("Move in Base Class");
+            public void Move() => Console.WriteLine("Move in Base Class");
+        }
+
+        class HeroAction : BaseAction, IAction
+        {
+            void IAction.Move() => Console.WriteLine("Move in HeroAction");
         }
     }
 }
