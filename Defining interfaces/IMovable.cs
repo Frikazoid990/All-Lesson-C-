@@ -16,7 +16,7 @@ namespace Defining_interfaces
 
         string Name { get; set; }
 
-        delegate void MoveHandler(string message); // определение делага для события
+        delegate void MoveHandler(string message); // определение делегата для события
 
         event MoveHandler MoveEvent; // событие движения
     }

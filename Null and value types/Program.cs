@@ -23,6 +23,9 @@ namespace Null_and_value_types
 
             int? val3 = null;
             
+
+
+            
             Console.WriteLine(val3 ?? 10);
 
             void IsNull(int? obj)

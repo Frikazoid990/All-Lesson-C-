@@ -15,7 +15,8 @@ namespace MT_OOP_3_Generics
     */
     public class PersonGeneric<T,S>
     {
-        public T Id { get; set; }
+        public static int test = 0;
+        public object Id { get; set; }
 
         //public S Country { get; set; }
         public string Name { get; set; }
@@ -24,6 +25,11 @@ namespace MT_OOP_3_Generics
         {
             Id = id;
             Name = name;
+        }
+
+        public T GetPersonGeneric(T id, string name)
+        {
+            return id;
         }
     }
 }

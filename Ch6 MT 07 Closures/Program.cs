@@ -8,7 +8,7 @@ namespace Ch6_MT_07_Closures
 {
     internal class Program
     {
-        static Action Outer()
+        static  Action Outer()
         {
             int x = 5;
             void Inner()
@@ -18,9 +18,7 @@ namespace Ch6_MT_07_Closures
             }
             return Inner;
         }
-
-
-
+        
         static void Main(string[] args)
         {
             var fn = Outer(); // fn = Inner, так как метод Outer возвращает функцию Inner
