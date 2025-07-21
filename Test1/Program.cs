@@ -11,7 +11,7 @@ namespace Test1
     {
         static void Main(string[] args) 
         {
-            string input = "2 неделя Аксус ИнтЕрНет-Продажи.xls";
+            string input = "2 неделя Аксус ИнтЕрНет-Продажи.xlsl";
             input.Split('.');
             input = input.ToUpper();
             if (input.Contains("ИНТЕРНЕТ"))
