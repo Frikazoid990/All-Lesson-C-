@@ -15,7 +15,7 @@ public class B
 {
     public int Z;
 }
-public class C : B
+public class D : B
 {
 
 }
