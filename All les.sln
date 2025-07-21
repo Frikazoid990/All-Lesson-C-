@@ -169,6 +169,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 02 Using Interfaces"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 03 Explicit implementation of interfaces", "Ch7 MT 03 Explicit implementation of interfaces\Ch7 MT 03 Explicit implementation of interfaces.csproj", "{D21476A2-F378-4278-93FA-ED6E13B3D840}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{012AF6B2-A027-4EEC-9415-2A71CBEE9B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{B802C6B1-5760-464C-ACD9-DFB5E7181A03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -467,6 +471,14 @@ Global
 		{D21476A2-F378-4278-93FA-ED6E13B3D840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D21476A2-F378-4278-93FA-ED6E13B3D840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D21476A2-F378-4278-93FA-ED6E13B3D840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -550,6 +562,8 @@ Global
 		{16C47443-52F1-4CF5-84A0-95EC8E0E16B9} = {2B3D4568-A830-4D72-AA76-318989A2E2B4}
 		{22B45A1F-FA8F-4671-9635-3A988414E2AA} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 		{D21476A2-F378-4278-93FA-ED6E13B3D840} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
+		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82} = {CD732574-CCAF-4053-B115-036267A727C0}
+		{B802C6B1-5760-464C-ACD9-DFB5E7181A03} = {CD732574-CCAF-4053-B115-036267A727C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}

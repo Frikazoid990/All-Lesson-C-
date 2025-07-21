@@ -27,6 +27,7 @@ namespace Ch6_MT_07_Closures
             fn();
             fn();
 
+            
             var outerFn = () =>
             {
                 int x = 10;
