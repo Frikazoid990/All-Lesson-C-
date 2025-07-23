@@ -20,7 +20,7 @@ namespace Test1
             Foo1([TestEnum.IsTest]);
 
         }
-        void Foo1(TestEnum[] bar)
+        static void Foo1(TestEnum[] bar)
         {
             if (bar.Contains(TestEnum.IsTest))
             {
