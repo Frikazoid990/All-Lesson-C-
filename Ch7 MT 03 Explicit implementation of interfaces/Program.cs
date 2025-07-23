@@ -40,7 +40,6 @@ namespace Explicit_implementation_of_interfaces
             tom.MoveEvent += () => Console.WriteLine($"{tom.Name} is moving");
             tom.Move();
 
-           
 
         }
 

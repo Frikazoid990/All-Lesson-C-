@@ -9,14 +9,9 @@ namespace Ch6_MT_01_Delegates
 {
     class Program
     {
-
         delegate void Message();
-
-
-
+        
         delegate int Operation(int x, int y);
-
-
 
         //--------------------------------------------------------------------
         delegate void SomeDel(int a, double b);
