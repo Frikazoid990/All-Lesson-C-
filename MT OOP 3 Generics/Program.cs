@@ -25,6 +25,11 @@ namespace MT_OOP_3_Generics
             */
 
             PersonGeneric<int, string> PersonGenBobi = new PersonGeneric<int, string>(546, "Bobi");
+            PersonGeneric<int, string>.test = 1;
+            var PersonGenBobi1 = new PersonGeneric<string, string>(546.ToString(), "Bobi");
+            PersonGeneric<string, string>.test = 2;
+            Console.WriteLine(PersonGeneric<int, int>.test);
+
             Console.WriteLine(PersonGenBobi.Id + " " + PersonGenBobi.Name);
 
             /*
