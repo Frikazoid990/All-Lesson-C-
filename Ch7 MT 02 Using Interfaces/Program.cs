@@ -50,7 +50,7 @@ namespace Ch7_MT_02_Using_Interfaces
             void Print();
         }
 
-        class Message : IPrintable, IMessage
+        class Message : IPrintable, IMessage, Car, Person
         {
             public string Text { get; }
 

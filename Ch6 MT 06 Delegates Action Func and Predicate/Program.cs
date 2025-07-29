@@ -14,6 +14,8 @@ namespace Ch6_MT_06_Delegates_Action_Func_and_Predicate
         static void Add(int x, int y) => Console.WriteLine($"{x} + {y} = {x + y}");
 
         static void Multiply(int x , int y) => Console.WriteLine($"{x} * {y} = {x * y}");
+
+        static double SumNumber(double n, double t) => n + t;
         //Action
 
         //Func
@@ -23,6 +25,10 @@ namespace Ch6_MT_06_Delegates_Action_Func_and_Predicate
         static int DoubleNumber(int n) => 2 * n;
 
         static int SquareNumber(int n) => n * n;
+        
+        static double DoOperation2(double n, double t, Func<double, double, double> op) => op(n,t);
+        
+        
 
         //Func
 
@@ -31,6 +37,7 @@ namespace Ch6_MT_06_Delegates_Action_Func_and_Predicate
             //Action
             DoOperation(10, 6, Add);
             DoOperation(10, 6, Multiply);
+            double r = DoOperation2(1.23,2.675,SumNumber);
             //Predicate
             Predicate<int> isPositive = (int x) => x > 0;
             Console.WriteLine(isPositive(20));
@@ -45,6 +52,8 @@ namespace Ch6_MT_06_Delegates_Action_Func_and_Predicate
 
             Func<int, int, string> createString = (a, b) => $"{a}{b}";
             Console.WriteLine(createString(1,5)); 
+            
+            
 
 
 

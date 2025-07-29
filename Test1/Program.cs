@@ -19,6 +19,7 @@ namespace Test1
 
             Foo1([TestEnum.IsTest]);
 
+
         }
         static void Foo1(TestEnum[] bar)
         {

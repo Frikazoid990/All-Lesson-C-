@@ -173,6 +173,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{B802C6B1-5760-464C-ACD9-DFB5E7181A03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 04 Implementation of intefaces in basic and derivative classes", "Ch7 MT 04 Implementation of intefaces in basic and derivative classes\Ch7 MT 04 Implementation of intefaces in basic and derivative classes.csproj", "{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -479,6 +481,10 @@ Global
 		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B802C6B1-5760-464C-ACD9-DFB5E7181A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -564,6 +570,7 @@ Global
 		{D21476A2-F378-4278-93FA-ED6E13B3D840} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 		{012AF6B2-A027-4EEC-9415-2A71CBEE9B82} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{B802C6B1-5760-464C-ACD9-DFB5E7181A03} = {CD732574-CCAF-4053-B115-036267A727C0}
+		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
