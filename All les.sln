@@ -177,6 +177,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 04 Implementation of
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{A38B0C76-C432-40C4-9D8C-B946A1A2925A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 05 Inheritance of the interfaces", "Ch7 MT 05 Inheritance of the interfaces\Ch7 MT 05 Inheritance of the interfaces.csproj", "{A3D82C39-54DF-4E42-A297-7A2B9C37490F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -491,6 +493,10 @@ Global
 		{A38B0C76-C432-40C4-9D8C-B946A1A2925A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A38B0C76-C432-40C4-9D8C-B946A1A2925A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A38B0C76-C432-40C4-9D8C-B946A1A2925A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -578,6 +584,7 @@ Global
 		{B802C6B1-5760-464C-ACD9-DFB5E7181A03} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 		{A38B0C76-C432-40C4-9D8C-B946A1A2925A} = {CD732574-CCAF-4053-B115-036267A727C0}
+		{A3D82C39-54DF-4E42-A297-7A2B9C37490F} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
