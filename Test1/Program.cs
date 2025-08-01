@@ -7,54 +7,31 @@ using System.Threading.Tasks;
 
 namespace Test1
 {
-    class Program
+
+}
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args) 
-        {
-            string input = "2 неделя Аксус ИнтЕрНет-Продажи.xlsl";
-            input.Split('.');
-            input = input.ToUpper();
-            if (input.Contains("ИНТЕРНЕТ"))
-                Console.WriteLine("yes");
-
-            Foo1([TestEnum.IsTest]);
-
-
-        }
-        static void Foo1(TestEnum[] bar)
-        {
-            if (bar.Contains(TestEnum.IsTest))
-            {
-                Console.WriteLine("textCase");
-            }
-        }
-        
-        void Foo(TestEnum bar, bool? myBool)
-        {
-            var tt = TestEnum.IsTest;
-            switch (tt)
-            {
-                case TestEnum.IsTest when myBool.Value: 
-                    break;
-                case TestEnum.IsTest when !myBool.Value: 
-                    break;
-                case TestEnum.IsTest: 
-                    break;
-                case TestEnum.IsDaniilMade:
-                    break;
-                case TestEnum.IsGitBased:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
+        var source = new List<int>();
+        Func<int,bool> isOdd = (int x) => x % 2 == 0;
+        var oddList = source.Where(isOdd).ToList();
     }
-
-    public enum TestEnum
+}
+public class Foo1
+{
+    public static string Name = "Foo1";
+    static Foo1()
     {
-        IsTest,
-        IsDaniilMade,
-        IsGitBased,
-        IsDotNet,
+        Console.WriteLine("static called Foo1");
+    }
+}
+
+public class Foo2
+{
+    public const string Name = "Foo2";
+    static Foo2()
+    {
+        Console.WriteLine("static called Foo2");
     }
 }

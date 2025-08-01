@@ -14,6 +14,9 @@ Console.WriteLine();
 
 IAction action6 = new HeroActionRepeatedImplementation();
 action6.Move();// Move in HeroAction
+(action6 as BaseActionRepeatedImplementation)?.Move();
+(action6 as HeroActionRepeatedImplementation)?.Move();
+
 BaseActionRepeatedImplementation action7 = new HeroActionRepeatedImplementation();
 action7.Move();// Move in BaseAction
 HeroActionRepeatedImplementation action8 = new HeroActionRepeatedImplementation(); 
@@ -27,6 +30,11 @@ action10.Move(); // Move in BaseAction
 HeroActionExplicitImplementation action11 = new HeroActionExplicitImplementation();
 action11.Move(); // Move in HeroAction
 
+BaseActionWithOverride tt = new HeroActionWithOverride();
+tt.Move();
+
+//test 
+
 
 interface IAction
 {
@@ -37,7 +45,7 @@ class BaseActionWithOverride : IAction
 {
     public virtual void Move() => Console.WriteLine("Move in BaseAction");
 }
-class HeroActionWithOverride : BaseActionWithOverride, IAction
+class HeroActionWithOverride : BaseActionWithOverride
 {
     public override void Move() => Console.WriteLine("Move in HeroAction");
 }
@@ -70,10 +78,35 @@ class HeroActionExplicitImplementation : BaseActionExplicitImplementation, IActi
     void IAction.Move() => Console.WriteLine("Move in IAction");
 }
 
+public abstract class Base : IAction
+{
+    public virtual void Move()
+    {
+        throw new NotImplementedException();
+    }
 
+    public abstract void Do();
+}
 
+public class Child1 : Base
+{
+    public override void Move()
+    {
+    }
+}
 
-
+public class Child2 : Base
+{
+    public override void Move()
+    {
+    }
+}
+public class Child3 : Base
+{
+    public new void Move()
+    {
+    }
+}
 
 
 

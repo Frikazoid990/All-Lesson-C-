@@ -179,6 +179,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 05 Inheritance of the interfaces", "Ch7 MT 05 Inheritance of the interfaces\Ch7 MT 05 Inheritance of the interfaces.csproj", "{A3D82C39-54DF-4E42-A297-7A2B9C37490F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 06 Interfaces in generic", "Ch7 MT 06 Interfaces in generic\Ch7 MT 06 Interfaces in generic.csproj", "{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 07 Copy objects. Interface ICloneable", "Ch7 MT 07 Copy objects. Interface ICloneable\Ch7 MT 07 Copy objects. Interface ICloneable.csproj", "{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{4242F460-D294-4FB1-85BC-CCD846DE588C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -497,6 +503,18 @@ Global
 		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D82C39-54DF-4E42-A297-7A2B9C37490F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4242F460-D294-4FB1-85BC-CCD846DE588C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4242F460-D294-4FB1-85BC-CCD846DE588C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4242F460-D294-4FB1-85BC-CCD846DE588C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4242F460-D294-4FB1-85BC-CCD846DE588C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -585,6 +603,9 @@ Global
 		{1E5F7ECD-4611-456D-964A-6CA4FE9A58D6} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
 		{A38B0C76-C432-40C4-9D8C-B946A1A2925A} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{A3D82C39-54DF-4E42-A297-7A2B9C37490F} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
+		{9E1D8BF1-EAA3-4B1C-93DF-982B5952CE73} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
+		{9BA6B78D-1924-483D-B7B6-444FD9C61EA5} = {B63287E7-CA69-493E-99AC-3FFA0AA4390E}
+		{4242F460-D294-4FB1-85BC-CCD846DE588C} = {CD732574-CCAF-4053-B115-036267A727C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
