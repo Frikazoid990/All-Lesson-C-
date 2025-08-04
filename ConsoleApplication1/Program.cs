@@ -12,9 +12,60 @@ namespace ConsoleApplication1
             
             IAction action2 = new HeroAction();
             action2.Move();     
+            
+            var sample = new Sample();
+            var overrided = new OverridedSample();
+
+            Console.WriteLine(sample.Virtuals[Sample.GetValuePosition].DynamicInvoke(sample));
+            Console.WriteLine(overrided.Virtuals[Sample.GetValuePosition].DynamicInvoke(sample));
         }
     }
 
+    public class Sample
+    {
+        public const int GetValuePosition = 0;
+
+        public Delegate[] Virtuals;
+
+        public int _x;
+
+        public Sample()
+        {
+            Virtuals = new Delegate[1] { 
+                new Func<Sample, int>(GetValue) 
+            };
+        }
+
+        public static void ChangeTo(Sample self, int newValue)
+        {
+            self._x = newValue;
+        }
+
+        public static int GetValue(Sample self)
+        {
+            return self._x;
+        }
+    }
+
+    public class OverridedSample : Sample
+    {
+        public OverridedSample() : base()
+        {
+            Virtuals[0] = new Func<Sample, int>(GetValue);
+        }
+
+        public static new int GetValue(Sample self)
+        {
+            return 666;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     interface IAction
     {
         void Move();
