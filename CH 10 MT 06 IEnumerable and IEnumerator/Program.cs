@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp3;
+﻿namespace CH_10_MT_06_IEnumerable_and_IEnumerator;
 
 class Program
 {
