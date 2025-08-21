@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using BenchmarkDotNet.Attributes;
@@ -12,25 +13,50 @@ namespace Analyzing_the_effectiveness_of_collection_methods;
 class Program
 {
     static Stopwatch sw = new Stopwatch();
-    static void EffectCheck(string operationName, Action action)
+    static void EffectCheck(string operationName, Action action, string collections)
     {
         sw.Restart();
         action();
         sw.Stop();
-        Console.WriteLine($"{operationName} array ms: {sw.ElapsedMilliseconds}");
+        Console.WriteLine($"{operationName} {collections} ms: {sw.ElapsedMilliseconds}");
     }
     static void Main(string[] args)
     {
         // BenchmarkRunner.Run<StringTest>(); EXAMPLE
-        // BenchmarkRunner.Run<EffectivenessOfArray>();
-        var ex = new EffectivenessOfArray();
-        EffectCheck("Setup", ex.Setup);
-        EffectCheck("Add", ex.Add);
-        EffectCheck("Find", ex.Find);
-        EffectCheck("Delete", ex.Delete);
-        EffectCheck("Sort", ex.Sort);
-
+        Console.WriteLine("Test collection ARRAY");
+        var exArr = new EffectivenessOfArray();
+        EffectCheck("Setup", exArr.Setup, "in array");
+        EffectCheck("Add", exArr.Add,"in array");
+        EffectCheck("Find", exArr.Find,"in array");
+        EffectCheck("Delete", exArr.Delete,"in array");
+        EffectCheck("Sort", exArr.Sort,"in array");
         
+        Console.WriteLine("\nTest collection LIST");
+        var exList = new EffectivenessOfList();
+        EffectCheck("Setup", exList.Setup, "in list");
+        EffectCheck("Add", exList.Add,"in list");
+        EffectCheck("Find", exList.Find,"in list");
+        EffectCheck("Delete", exList.Delete,"in list");
+        EffectCheck("Sort", exList.Sort,"in list");
+
+        Console.WriteLine("\nTest collection HSet");
+        var exHSet = new EffectivenessOfHashSet();
+        EffectCheck("Setup", exHSet.Setup, "in hashset");
+        EffectCheck("Add", exHSet.Add,"in hashset");
+        EffectCheck("Find", exHSet.Find,"in hashset");
+        EffectCheck("Delete", exHSet.Delete,"in hashset");
+        EffectCheck("Sort", exHSet.Sort,"in hashset");
+        
+        // var set = new ConcurrentBag<long>();
+        // Parallel.For(0, Environment.ProcessorCount, _ =>
+        // {
+        //     while (true)
+        //     {
+        //         set.Add(Random.Shared.NextInt64());
+        //         Math.Sqrt(Random.Shared.NextDouble());
+        //
+        //     }
+        // });
     }
 }
 
@@ -46,7 +72,7 @@ public interface IEffectiveness
 public class EffectivenessOfArray : IEffectiveness
 {
 
-    private int size = 10000000;
+    const int size = 10000000;
 
     private int count;
     private int[] array;
@@ -95,7 +121,6 @@ public class EffectivenessOfArray : IEffectiveness
     [Benchmark]
     public void Find()
     {
-        
         var FindNumber = array[Random.Shared.Next(0, array.Length)];
         Array.Find(array, i => i == FindNumber);
     }
@@ -104,6 +129,141 @@ public class EffectivenessOfArray : IEffectiveness
     {
         var temp = (int[])array.Clone();
         Array.Sort(temp);
+    }
+}
+
+public class EffectivenessOfList : IEffectiveness
+{
+    const int size = 10000000;
+    private List<int> list; 
+    
+    public void Setup()
+    {
+        list = new List<int>(size);
+        for (var i = 0; i < list.Capacity ; i++)
+        {
+            list.Add(Random.Shared.Next(-1000000,1000000));
+        }
+
+        // Console.WriteLine(list[0]);
+        // Console.WriteLine(list.Capacity == size);
+    }
+    
+    public void Add()
+    {
+        list.Add(Random.Shared.Next(-1000000,1000000));
+    }
+
+    public void Delete()
+    {
+        
+        list.RemoveAt(0);
+    }
+
+    public void Find()
+    {
+        var r = Random.Shared.Next(0, list.Count() - 1);
+        var FindNumber = list[r];
+        var f= list.Find(x => x == FindNumber);
+    }
+
+    public void Sort()
+    {
+        list.Sort();
+    }
+}
+
+public class EffectivensessOfLinkedList : IEffectiveness
+{
+    public void Setup()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Add()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Delete()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Find()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Sort()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class EffectivensessOfStack : IEffectiveness
+{
+    public void Setup()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Add()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Delete()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Find()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Sort()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class EffectivenessOfHashSet : IEffectiveness
+{
+    const int size = 10000000;
+    
+    private HashSet<int> hashset;
+    public void Setup()
+    {
+        hashset = new HashSet<int>(size);
+        for (var i = 0; i < hashset.Capacity; i++)
+        {
+            hashset.Add(i);
+        }
+
+        Console.WriteLine();
+    }
+
+    public void Add()
+    {
+        hashset.Add(Random.Shared.Next(-1000000,1000000));
+    }
+
+    public void Delete()
+    {
+            var number = hashset.First();
+            hashset.Remove(number);    
+    }
+
+    public void Find()
+    {
+       var b = hashset.Contains(Random.Shared.Next(-1000000,1000000));
+    }
+
+    public void Sort()
+    {
+        var l = hashset.OrderBy(x => x).ToList();
     }
 }
 
