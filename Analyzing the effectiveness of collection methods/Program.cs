@@ -71,19 +71,6 @@ class Program
         EffectCheck("Delete", exDict.Delete,"in dictionary");
         EffectCheck("Sort", exDict.Sort,"in dictionary");
         
-
-
-
-        // var set = new ConcurrentBag<long>();
-        // Parallel.For(0, Environment.ProcessorCount, _ =>
-        // {
-        //     while (true)
-        //     {
-        //         set.Add(Random.Shared.NextInt64());
-        //         Math.Sqrt(Random.Shared.NextDouble());
-        //
-        //     }
-        // });
     }
 }
 
@@ -348,34 +335,3 @@ public class EffectivenessOfDictionaty : IEffectiveness
         dict = new Dictionary<int, int>(list);
     }
 }
-
-// public class StringTest EXAMPLE
-// {
-//     string[] numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" };
-//     [Benchmark]
-//     public string WithStringBuilder()
-//     {
-//         StringBuilder stringBuilder = new StringBuilder();
-//         foreach (string s in numbers)
-//         {
-//             stringBuilder.Append(s);
-//             stringBuilder.Append(" ");
-//         }
-//         return stringBuilder.ToString();
-//     }
-//     [Benchmark]
-//     public string WithConcatenation()
-//     {
-//         string result = "";
-//         foreach (string s in numbers) result = result + s + " ";
-//         return result;
-//     }
-//     [Benchmark]
-//     public string WithInterpolation()
-//     {
-//         string result = "";
-//         foreach (string s in numbers) result = $"{result}{s} ";
-//         return result;
-//     }
-//
-// }
