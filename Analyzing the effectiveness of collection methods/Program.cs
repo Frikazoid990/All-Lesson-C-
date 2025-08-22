@@ -39,7 +39,6 @@ class Program
     }
     static void Main(string[] args)
     {
-        // BenchmarkRunner.Run<StringTest>(); EXAMPLE //закомментированный код удалять. гит всё равно помнит
         var collectionList = new List<IEffectiveness>() //инициализаторы спасают))
         {
             new EffectivenessOfArray(),
