@@ -46,7 +46,34 @@ class Program
         EffectCheck("Find", exHSet.Find,"in hashset");
         EffectCheck("Delete", exHSet.Delete,"in hashset");
         EffectCheck("Sort", exHSet.Sort,"in hashset");
+
+        Console.WriteLine("\nTest collection LinkedList");
+        var exLinkedList = new EffectivensessOfLinkedList();
+        EffectCheck("Setup", exLinkedList.Setup, "in linkedlist");
+        EffectCheck("Add", exLinkedList.Add,"in linkedlist");
+        EffectCheck("Find", exLinkedList.Find,"in linkedlist");
+        EffectCheck("Delete", exLinkedList.Delete,"in linkedlist");
+        EffectCheck("Sort", exLinkedList.Sort,"in linkedlist");
+
+        Console.WriteLine("\nTest collection Stack");
+        var exStack = new EffectivensessOfStack();
+        EffectCheck("Setup", exStack.Setup, "in stack");
+        EffectCheck("Add", exStack.Add,"in stack");
+        EffectCheck("Find", exStack.Find,"in stack");
+        EffectCheck("Delete", exStack.Delete,"in stack");
+        EffectCheck("Sort", exStack.Sort,"in stack");
+
+        Console.WriteLine("\nTest collection Dictionary");
+        var exDict = new EffectivenessOfDictionaty();
+        EffectCheck("Setup", exDict.Setup, "in dictionary");
+        EffectCheck("Add", exDict.Add,"in dictionary");
+        EffectCheck("Find", exDict.Find,"in dictionary");
+        EffectCheck("Delete", exDict.Delete,"in dictionary");
+        EffectCheck("Sort", exDict.Sort,"in dictionary");
         
+
+
+
         // var set = new ConcurrentBag<long>();
         // Parallel.For(0, Environment.ProcessorCount, _ =>
         // {
@@ -175,57 +202,74 @@ public class EffectivenessOfList : IEffectiveness
 
 public class EffectivensessOfLinkedList : IEffectiveness
 {
+    const int size = 10000000;
+    private LinkedList<int> linkedList;
     public void Setup()
     {
-        throw new NotImplementedException();
+        linkedList = new LinkedList<int>();
+        for (int i = 0; i < size; i++)
+        {
+            linkedList.AddLast(Random.Shared.Next(-1000000,1000000));
+        }
     }
 
     public void Add()
     {
-        throw new NotImplementedException();
+        linkedList.AddLast(Random.Shared.Next(-1000000,1000000));
     }
 
     public void Delete()
     {
-        throw new NotImplementedException();
+        linkedList.RemoveLast();
     }
 
     public void Find()
     {
-        throw new NotImplementedException();
+        var item = Random.Shared.Next(-1000000, 1000000);
+        linkedList.Find(item);
     }
 
     public void Sort()
     {
-        throw new NotImplementedException();
+        
+        var sorted = linkedList.OrderBy(x => x).ToList();
+        linkedList = new LinkedList<int>(sorted);
     }
 }
 
 public class EffectivensessOfStack : IEffectiveness
 {
+    private Stack<int> stack;
+    const int size = 10000000;
     public void Setup()
     {
-        throw new NotImplementedException();
+        stack = new Stack<int>(size);
+        for (int i = 0; i < stack.Capacity; i++)
+        {
+            stack.Push(Random.Shared.Next(-1000000,1000000));
+        }
     }
 
     public void Add()
     {
-        throw new NotImplementedException();
+        stack.Push(Random.Shared.Next(-1000000,1000000));
     }
 
     public void Delete()
     {
-        throw new NotImplementedException();
+        var item = stack.Pop();
     }
 
     public void Find()
     {
-        throw new NotImplementedException();
+        var list = stack.ToList();
+        var item = list[Random.Shared.Next(list.Count - 1)];
+        var b = stack.Contains(item);
     }
 
     public void Sort()
     {
-        throw new NotImplementedException();
+        var sortedStack = stack.OrderBy(x => x).ToList();
     }
 }
 
@@ -264,6 +308,44 @@ public class EffectivenessOfHashSet : IEffectiveness
     public void Sort()
     {
         var l = hashset.OrderBy(x => x).ToList();
+    }
+}
+
+public class EffectivenessOfDictionaty : IEffectiveness
+{
+    private Dictionary<int, int> dict;
+    const int size = 10000000;
+    
+    public void Setup()
+    {
+        dict = new Dictionary<int, int>(size);
+        for (int i = 0; i < dict.Capacity; i++)
+        {
+            dict.Add(i, Random.Shared.Next(-10000000,1000000));
+        }
+        
+    }
+
+    public void Add()
+    {
+        dict.Add(-10, Random.Shared.Next(-1000000,1000000));
+    }
+
+    public void Delete()
+    {
+        dict.Remove(-10);
+    }
+
+    public void Find()
+    {
+        var item = dict[Random.Shared.Next(dict.Capacity)];
+        var b = dict.ContainsValue(item);
+    }
+
+    public void Sort()
+    {
+        var list = dict.OrderBy(x => x.Value).ToList();
+        dict = new Dictionary<int, int>(list);
     }
 }
 

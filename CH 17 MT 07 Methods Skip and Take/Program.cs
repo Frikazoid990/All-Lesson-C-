@@ -11,6 +11,5 @@ class Program
         {
             Console.Write($"{r}");
         }
-
     }
 }
