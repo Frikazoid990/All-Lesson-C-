@@ -20,62 +20,40 @@ class Program
         sw.Stop();
         Console.WriteLine($"{operationName} {collections} ms: {sw.ElapsedMilliseconds}");
     }
+
+    static void EffectCheckWithClasses<T>(List<T> obj) where T : IEffectiveness
+    {
+        foreach (var o  in obj)
+        {
+            var nc = o.GetNameOfCollection();
+            Console.WriteLine($"\nTest collection {nc}");
+            EffectCheck("Setup", o.Setup, nc);
+            EffectCheck("Add", o.Add,nc);
+            EffectCheck("Find", o.Find,nc);
+            EffectCheck("Delete", o.Delete,nc);
+            EffectCheck("Sort", o.Sort,nc);
+        }
+
+        
+    }
     static void Main(string[] args)
     {
         // BenchmarkRunner.Run<StringTest>(); EXAMPLE
-        Console.WriteLine("Test collection ARRAY");
-        var exArr = new EffectivenessOfArray();
-        EffectCheck("Setup", exArr.Setup, "in array");
-        EffectCheck("Add", exArr.Add,"in array");
-        EffectCheck("Find", exArr.Find,"in array");
-        EffectCheck("Delete", exArr.Delete,"in array");
-        EffectCheck("Sort", exArr.Sort,"in array");
-        
-        Console.WriteLine("\nTest collection LIST");
-        var exList = new EffectivenessOfList();
-        EffectCheck("Setup", exList.Setup, "in list");
-        EffectCheck("Add", exList.Add,"in list");
-        EffectCheck("Find", exList.Find,"in list");
-        EffectCheck("Delete", exList.Delete,"in list");
-        EffectCheck("Sort", exList.Sort,"in list");
-
-        Console.WriteLine("\nTest collection HSet");
-        var exHSet = new EffectivenessOfHashSet();
-        EffectCheck("Setup", exHSet.Setup, "in hashset");
-        EffectCheck("Add", exHSet.Add,"in hashset");
-        EffectCheck("Find", exHSet.Find,"in hashset");
-        EffectCheck("Delete", exHSet.Delete,"in hashset");
-        EffectCheck("Sort", exHSet.Sort,"in hashset");
-
-        Console.WriteLine("\nTest collection LinkedList");
-        var exLinkedList = new EffectivensessOfLinkedList();
-        EffectCheck("Setup", exLinkedList.Setup, "in linkedlist");
-        EffectCheck("Add", exLinkedList.Add,"in linkedlist");
-        EffectCheck("Find", exLinkedList.Find,"in linkedlist");
-        EffectCheck("Delete", exLinkedList.Delete,"in linkedlist");
-        EffectCheck("Sort", exLinkedList.Sort,"in linkedlist");
-
-        Console.WriteLine("\nTest collection Stack");
-        var exStack = new EffectivensessOfStack();
-        EffectCheck("Setup", exStack.Setup, "in stack");
-        EffectCheck("Add", exStack.Add,"in stack");
-        EffectCheck("Find", exStack.Find,"in stack");
-        EffectCheck("Delete", exStack.Delete,"in stack");
-        EffectCheck("Sort", exStack.Sort,"in stack");
-
-        Console.WriteLine("\nTest collection Dictionary");
-        var exDict = new EffectivenessOfDictionaty();
-        EffectCheck("Setup", exDict.Setup, "in dictionary");
-        EffectCheck("Add", exDict.Add,"in dictionary");
-        EffectCheck("Find", exDict.Find,"in dictionary");
-        EffectCheck("Delete", exDict.Delete,"in dictionary");
-        EffectCheck("Sort", exDict.Sort,"in dictionary");
-        
+        var collectionList = new List<IEffectiveness>();
+        var exArr = new EffectivenessOfArray("Array");
+        var exList = new EffectivenessOfList("List");
+        var exHSet = new EffectivenessOfHashSet("HashSet");
+        var exLinkedList = new EffectivensessOfLinkedList("LinkedList");
+        var exStack = new EffectivensessOfStack("Stack");
+        var exDict = new EffectivenessOfDictionaty("Dictionary");
+        collectionList.AddRange(exArr, exList, exHSet, exLinkedList, exStack, exDict);
+        EffectCheckWithClasses(collectionList);
     }
 }
 
 public interface IEffectiveness
 {
+    public string GetNameOfCollection();
     public void Setup();
     public void Add();
     public void Delete();
@@ -85,13 +63,21 @@ public interface IEffectiveness
 
 public class EffectivenessOfArray : IEffectiveness
 {
-
+    public string NameOfCollection { get; set; }
     const int size = 10000000;
-
     private int count;
     private int[] array;
-    
-    
+
+    public EffectivenessOfArray(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+
+    public string GetNameOfCollection()
+    {
+        return NameOfCollection;
+    }
+
     [Benchmark]
     public void Setup()
     {
@@ -148,9 +134,19 @@ public class EffectivenessOfArray : IEffectiveness
 
 public class EffectivenessOfList : IEffectiveness
 {
+    public string NameOfCollection { get; set; }
     const int size = 10000000;
-    private List<int> list; 
-    
+    private List<int> list;
+
+    public EffectivenessOfList(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+    public string GetNameOfCollection()
+    {
+        return NameOfCollection;
+    }
+
     public void Setup()
     {
         list = new List<int>(size);
@@ -189,8 +185,19 @@ public class EffectivenessOfList : IEffectiveness
 
 public class EffectivensessOfLinkedList : IEffectiveness
 {
+    public string NameOfCollection { get; set; }
     const int size = 10000000;
     private LinkedList<int> linkedList;
+
+    public EffectivensessOfLinkedList(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+    public string GetNameOfCollection()
+    {
+        return NameOfCollection;
+    }
+
     public void Setup()
     {
         linkedList = new LinkedList<int>();
@@ -226,8 +233,20 @@ public class EffectivensessOfLinkedList : IEffectiveness
 
 public class EffectivensessOfStack : IEffectiveness
 {
+    public string NameOfCollection { get; set; }
     private Stack<int> stack;
     const int size = 10000000;
+
+    public EffectivensessOfStack(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+    
+    public string GetNameOfCollection()
+    {
+        return NameOfCollection;
+    }
+
     public void Setup()
     {
         stack = new Stack<int>(size);
@@ -263,8 +282,19 @@ public class EffectivensessOfStack : IEffectiveness
 public class EffectivenessOfHashSet : IEffectiveness
 {
     const int size = 10000000;
-    
+    public string NameOfCollection { get; set; }
     private HashSet<int> hashset;
+
+    public EffectivenessOfHashSet(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+    public string GetNameOfCollection()
+
+    {
+        return NameOfCollection;
+    }
+
     public void Setup()
     {
         hashset = new HashSet<int>(size);
@@ -302,7 +332,19 @@ public class EffectivenessOfDictionaty : IEffectiveness
 {
     private Dictionary<int, int> dict;
     const int size = 10000000;
+
+    public EffectivenessOfDictionaty(string nameOfCollection)
+    {
+        NameOfCollection = nameOfCollection;
+    }
+
+    public string NameOfCollection { get; set; }
     
+    public string GetNameOfCollection()
+    {
+        return NameOfCollection;
+    }
+
     public void Setup()
     {
         dict = new Dictionary<int, int>(size);
