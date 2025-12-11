@@ -13,10 +13,51 @@ class Program
 {
     static void Main(string[] args)
     {
-        var source = new List<int>();
-        Func<int,bool> isOdd = (int x) => x % 2 == 0;
-        var oddList = source.Where(isOdd).ToList();
+        List<Vehicale> vehicalesRes = new List<Vehicale>()
+        {
+            new Vehicale(11, true, 1,"green"),
+            new Vehicale(12, false, 2,"green"),
+            new Vehicale(11, true, 3,"green"),
+            new Vehicale(13, false, 4,"green"),
+            new Vehicale(13, false, 5,"green"),
+            new Vehicale(13, false, 6,"green"),
+            new Vehicale(14, true, 7,"green"),
+        };
+        var groups = vehicalesRes.GroupBy(x => x.IMEI);
+        //var existing = _provider.GetByImeis(gropus.Select(x => x.Key));
+        foreach (var group in groups)
+        {
+            var vehicles = group.ToList();
+            if (!vehicles.First().HaveDb)//
+            {
+                vehicles.RemoveAt(0);
+            }
+            foreach (var vehicle in vehicles)
+            {
+                vehicle.Property = "";
+            }
+        }
+
+        Console.WriteLine();
     }
+}
+
+public class Vehicale
+{
+    public int Id { get; set; }
+    public int IMEI  { get; set; }
+    public bool HaveDb { get; set; }
+    
+    public string Property { get; set; }
+
+    public Vehicale(int imei, bool haveDb, int id, string property)
+    {
+        IMEI = imei;
+        HaveDb = haveDb;
+        Id = id;
+        Property = property;
+    }
+
 }
 public class Foo1
 {

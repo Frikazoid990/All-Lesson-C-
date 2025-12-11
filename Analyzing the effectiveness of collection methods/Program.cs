@@ -39,14 +39,37 @@ class Program
     }
     static void Main(string[] args)
     {
+        var l = Enumerable.Range(0, 10).ToList();
+        var l2 = Enumerable.Range(0, 5).Union(Enumerable.Range(6, 4)).ToList();
+        int tt = 0;
+
+        int tt2 = 0;
+        for (var i = 0; i < l.Count; i++)
+        {
+            tt ^= l[i];
+        }
+        
+        for (var i = 0; i < l2.Count; i++)
+        {
+            tt2 ^= l2[i];
+        }
+        Console.WriteLine(tt);
+        Console.WriteLine(tt2);
+
+        Console.WriteLine(tt^tt2);
+
+        Console.WriteLine(string.Join(',', l.Select(x => x.ToString())));
+        Console.WriteLine(string.Join(',', l2.Select(x => x.ToString())));
+        
+        return;
         var collectionList = new List<IEffectiveness>() //инициализаторы спасают))
         {
-            new EffectivenessOfArray(),
-            new EffectivenessOfList(),
+            //new EffectivenessOfArray(),
+            //new EffectivenessOfList(),
             new EffectivenessOfHashSet(),
-            new EffectivensessOfLinkedList(),
-            new EffectivensessOfStack(),
-            new EffectivenessOfDictionaty(),
+            //new EffectivensessOfLinkedList(),
+            //new EffectivensessOfStack(),
+            //new EffectivenessOfDictionaty(),
         };
         EffectCheckWithClasses(collectionList);
     }
