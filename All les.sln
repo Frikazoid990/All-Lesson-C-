@@ -243,7 +243,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 15 MT 01 Tasks and class
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 Multithreaing", "14 Multithreaing", "{C1804272-3E08-4BD7-A00B-78CD4654538D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 14 MT 01 Multithreading and class Thread", "CH 14 MT 01 Multithreading and class Thread\CH 14 MT 01 Multithreading and class Thread.csproj", "{AAD53D59-8E9D-4F86-A371-7035DEAD6910}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 01 Multithreading and class Thread", "MT 01 Multithreading and class Thread\MT 01 Multithreading and class Thread.csproj", "{AAD53D59-8E9D-4F86-A371-7035DEAD6910}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parse", "Parse\Parse.csproj", "{647AE470-8810-4063-98D7-7C4D53F8388F}"
 EndProject
