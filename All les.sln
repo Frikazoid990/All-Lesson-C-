@@ -109,7 +109,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 02 Types", "EN 02 Types\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EN 03 ControlFlow", "EN 03 ControlFlow\EN 03 ControlFlow.csproj", "{C12F799F-A199-4571-8B26-1227C4DF1B42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 MT OOP", "02 MT OOP", "{F083780F-836F-4457-B0E9-EEC7A8B078AB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 MT OOP", "04 MT OOP", "{F083780F-836F-4457-B0E9-EEC7A8B078AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EN 04 ArraysCollections", "EN 04 ArraysCollections\EN 04 ArraysCollections.csproj", "{9FE9F024-3CFC-4C75-939E-9DDC3EA2EE97}"
 EndProject
@@ -121,9 +121,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 03.01 Generic", "MT 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT OOP 03.02 Generic", "MT OOP 03.02 Generic\MT OOP 03.02 Generic.csproj", "{E208CB15-30DC-4A28-ACF4-926CCDF9C94D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 MT Classes Structs and Namesapces", "01 MT Classes Structs and Namesapces", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 MT Classes Structs and Namesapces", "03 MT Classes Structs and Namesapces", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 MT Exception-handling statements", "03 MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 MT Exception-handling statements", "05 MT Exception-handling statements", "{B01AE08D-A673-405E-AF4B-F22809EC07F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MT 01 try_catch_finally", "MT 01 try_catch_finally\MT 01 try_catch_finally.csproj", "{078CCCEE-289A-46E8-8456-F20AB3E93112}"
 EndProject
@@ -137,7 +137,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 05 Create Excaptions cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 06 Find block catch when handling exception", "MT 06 Find block catch when handling exception\MT 06 Find block catch when handling exception.csproj", "{211A5D6E-C1E6-499B-86C0-A7CD1AABFF72}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 MT Delegates, Events, and Lambdas", "04 MT Delegates, Events, and Lambdas", "{2B3D4568-A830-4D72-AA76-318989A2E2B4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 MT Delegates Events and Lambdas", "06 MT Delegates Events and Lambdas", "{2B3D4568-A830-4D72-AA76-318989A2E2B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 01.00 Delegates", "Ch6 MT 01 Delegates\Ch6 MT 01.00 Delegates.csproj", "{D2A96957-BF25-4990-A074-18C9CD8568C7}"
 EndProject
@@ -151,7 +151,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProectStockeOnliner", "Proe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch6 MT 03 Lambdas", "Ch6 MT 03 Lambdas\Ch6 MT 03 Lambdas.csproj", "{DA77F804-5BD7-4611-BB49-90C07BC5AD39}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interface", "05 Interface", "{B63287E7-CA69-493E-99AC-3FFA0AA4390E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Interfaces", "07 Interfaces", "{B63287E7-CA69-493E-99AC-3FFA0AA4390E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 01 Defining interfaces", "Defining interfaces\Ch7 MT 01 Defining interfaces.csproj", "{0B42E547-F404-47F5-9A97-D93E956DB5BF}"
 EndProject
@@ -175,7 +175,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 06 Interfaces in gen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7 MT 07 Copy objects. Interface ICloneable", "Ch7 MT 07 Copy objects. Interface ICloneable\Ch7 MT 07 Copy objects. Interface ICloneable.csproj", "{9BA6B78D-1924-483D-B7B6-444FD9C61EA5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Additional OOP features in C#", "06 Additional OOP features in C#", "{5E4A0911-0395-48C5-BB85-BF457FDDCF2C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Additional OOP features in Cs", "08 Additional OOP features in Cs", "{5E4A0911-0395-48C5-BB85-BF457FDDCF2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch8 MT 01 Defining Operators", "Ch8 MT 01 Defining Operators\Ch8 MT 01 Defining Operators.csproj", "{67F0F5B9-2892-4751-9028-F2B6CC139928}"
 EndProject
@@ -197,7 +197,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 8 MT 09 Records", "CH 8 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 8 MT 10 ref struct", "CH 8 MT 10 ref struct\CH 8 MT 10 ref struct.csproj", "{70497565-3102-4DA8-98D2-02FA459D46DB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Collections", "08 Collections", "{33037562-80F1-4610-8FFF-888FC6472B88}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Collections", "10 Collections", "{33037562-80F1-4610-8FFF-888FC6472B88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 10 MT 01 List", "CH 10 MT 01 List\CH 10 MT 01 List.csproj", "{987689D7-DDFE-4B02-B757-66FEB4564036}"
 EndProject
@@ -213,7 +213,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 10 MT 06 IEnumerable and
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 10 MT 07 Iterators and the yield operator", "CH 10 MT 07 Iterators and the yield operator\CH 10 MT 07 Iterators and the yield operator.csproj", "{FBB59BA1-4684-4590-A4B8-7F92B9D3DE9E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15 LINQ", "15 LINQ", "{A29E1463-A600-4EEF-B43D-3F40F75BC25B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17 LINQ", "17 LINQ", "{A29E1463-A600-4EEF-B43D-3F40F75BC25B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 17 MT 01 Base of LINQ", "CH 17 MT 01 Base of LINQ\CH 17 MT 01 Base of LINQ.csproj", "{8DED41B2-A02C-4E14-91AA-9B790B905564}"
 EndProject
@@ -237,17 +237,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 17 MT 08 Grouping", "CH 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 17 MT 09 Joining collections", "CH 17 MT 09 Joining collections\CH 17 MT 09 Joining collections.csproj", "{E48708CB-ADB4-4E58-B7E6-55F25E861C3D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 Parallel programming and TPL libriray", "13 Parallel programming and TPL libriray", "{FE5ED181-42A9-4B0D-ABA0-1DBD5A02E928}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15 Parallel programming and TPL libriray", "15 Parallel programming and TPL libriray", "{FE5ED181-42A9-4B0D-ABA0-1DBD5A02E928}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 15 MT 01 Tasks and class Task", "CH 15 MT 01 Tasks and class Task\CH 15 MT 01 Tasks and class Task.csproj", "{3CD5ADCD-9B27-464E-A5E5-0C19EA8B9A17}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12 Multithreaing", "12 Multithreaing", "{C1804272-3E08-4BD7-A00B-78CD4654538D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 Multithreaing", "14 Multithreaing", "{C1804272-3E08-4BD7-A00B-78CD4654538D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH 14 MT 01 Multithreading and class Thread", "CH 14 MT 01 Multithreading and class Thread\CH 14 MT 01 Multithreading and class Thread.csproj", "{AAD53D59-8E9D-4F86-A371-7035DEAD6910}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parse", "Parse\Parse.csproj", "{647AE470-8810-4063-98D7-7C4D53F8388F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1", "Test1\Test1.csproj", "{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 02 Creating threads Delegate ThreadStart", "MT 02 Creating threads Delegate ThreadStart\MT 02 Creating threads Delegate ThreadStart.csproj", "{417B4AFE-6080-415F-9293-BE724104E646}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -683,6 +685,10 @@ Global
 		{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417B4AFE-6080-415F-9293-BE724104E646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417B4AFE-6080-415F-9293-BE724104E646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417B4AFE-6080-415F-9293-BE724104E646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417B4AFE-6080-415F-9293-BE724104E646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -805,6 +811,7 @@ Global
 		{AAD53D59-8E9D-4F86-A371-7035DEAD6910} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 		{647AE470-8810-4063-98D7-7C4D53F8388F} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F} = {CD732574-CCAF-4053-B115-036267A727C0}
+		{417B4AFE-6080-415F-9293-BE724104E646} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
