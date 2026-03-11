@@ -251,6 +251,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1", "Test1\Test1.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 02 Creating threads Delegate ThreadStart", "MT 02 Creating threads Delegate ThreadStart\MT 02 Creating threads Delegate ThreadStart.csproj", "{417B4AFE-6080-415F-9293-BE724104E646}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 03 Threads with params", "MT 03 Threads with params\MT 03 Threads with params.csproj", "{88891850-8060-486D-9DB6-20C567D8BFB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -689,6 +691,10 @@ Global
 		{417B4AFE-6080-415F-9293-BE724104E646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417B4AFE-6080-415F-9293-BE724104E646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{417B4AFE-6080-415F-9293-BE724104E646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88891850-8060-486D-9DB6-20C567D8BFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88891850-8060-486D-9DB6-20C567D8BFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88891850-8060-486D-9DB6-20C567D8BFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88891850-8060-486D-9DB6-20C567D8BFB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -812,6 +818,7 @@ Global
 		{647AE470-8810-4063-98D7-7C4D53F8388F} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{35BF5C8A-59A8-4059-915E-DD7AD6D44C0F} = {CD732574-CCAF-4053-B115-036267A727C0}
 		{417B4AFE-6080-415F-9293-BE724104E646} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
+		{88891850-8060-486D-9DB6-20C567D8BFB4} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
