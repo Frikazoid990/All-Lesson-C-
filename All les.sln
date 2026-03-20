@@ -255,6 +255,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 03 Threads with params",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 04 Thread synchronization", "MT 04 Thread synchronization\MT 04 Thread synchronization.csproj", "{B250F04B-74B8-43EE-AE43-78345B2E08B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT 05 Monitors", "MT 05 Monitors\MT 05 Monitors.csproj", "{954139D9-9B60-404C-8D34-95B0ACCAA9BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -701,6 +703,10 @@ Global
 		{B250F04B-74B8-43EE-AE43-78345B2E08B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B250F04B-74B8-43EE-AE43-78345B2E08B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B250F04B-74B8-43EE-AE43-78345B2E08B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954139D9-9B60-404C-8D34-95B0ACCAA9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954139D9-9B60-404C-8D34-95B0ACCAA9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954139D9-9B60-404C-8D34-95B0ACCAA9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954139D9-9B60-404C-8D34-95B0ACCAA9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -826,6 +832,7 @@ Global
 		{417B4AFE-6080-415F-9293-BE724104E646} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 		{88891850-8060-486D-9DB6-20C567D8BFB4} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 		{B250F04B-74B8-43EE-AE43-78345B2E08B9} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
+		{954139D9-9B60-404C-8D34-95B0ACCAA9BD} = {C1804272-3E08-4BD7-A00B-78CD4654538D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03E3AC4-5A3D-4659-8C07-BF4E051D19A3}
