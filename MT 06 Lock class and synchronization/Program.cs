@@ -1,9 +1,24 @@
-﻿namespace MT_06_Lock_class_and_synchronization;
+int x = 0; //некоторый общий ресурс
+Lock _locker = new();
 
-class Program
+for (int i = 1; i < 6; i++)
 {
-    static void Main(string[] args)
+    Thread myThread = new Thread(PrintWithKeyWordlock);
+    myThread.Name = $"Поток {i}";
+    myThread.Start();
+}
+
+void PrintWithKeyWordlock()
+{
+    lock (_locker)
     {
-        
+        x = 1;
+        for (int i = 1; i < 6; i++)
+        {
+            Console.WriteLine($"{Thread.CurrentThread.Name}: {x}");
+            x++;
+            Thread.Sleep(150);
+        }    
     }
+    
 }

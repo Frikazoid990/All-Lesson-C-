@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        var foo = new FooClass();
-        
-        
+        var fact = new Fact(5);
+        fact.Calculation();
+        fact.Result();
     }
 }
 
