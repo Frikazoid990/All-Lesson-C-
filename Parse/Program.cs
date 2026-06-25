@@ -34,11 +34,13 @@ public static class TemplateCleaner
             .Replace("\\\"", "\"");
         try
         {
+            //jhvjhvjh
             var parser = new HtmlParser();
             var document = parser.ParseDocument(template);
             var spanNode  = document.QuerySelectorAll("span");
             string text = document.Body?.TextContent ?? document.DocumentElement?.TextContent ?? "";
             return text.Trim();
+            //Example
         }
         catch
         {
