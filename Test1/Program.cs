@@ -8,6 +8,7 @@ class Program
         fact.Calculation();
         fact.Result();
         //test
+        fdsfsd
     }
 }
 
