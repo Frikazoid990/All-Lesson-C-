@@ -17,7 +17,7 @@ Tod.Print();
 
 
 //class Person
-//{
+//{1
 //    public string name = "Undefined"; // имя
 //    public int age; //возраст
 //    public void Print()
