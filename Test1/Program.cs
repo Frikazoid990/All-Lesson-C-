@@ -7,6 +7,7 @@ class Program
         var fact = new Fact(5);
         fact.Calculation();
         fact.Result();
+        //test
     }
 }
 
